@@ -1,4 +1,7 @@
 QuickApp::Application.routes.draw do
+  resources :timesheets
+
+
   devise_for :employees
 
   resources :employees
