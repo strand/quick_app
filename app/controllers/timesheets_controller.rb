@@ -1,4 +1,6 @@
 class TimesheetsController < ApplicationController
+  before_filter :authenticate_employee!, :except => [:index, :show]
+
   # GET /timesheets
   # GET /timesheets.json
   def index
